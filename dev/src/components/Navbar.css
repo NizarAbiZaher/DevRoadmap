@@ -1,0 +1,30 @@
+.navbar {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    text-shadow: 0.03em 0.03em 0 rgb(0, 255, 213),
+    0.06em 0.06em 0 rgb(154, 192, 18),
+    0.09em 0.09em 0 rgb(226, 143, 87),
+    0.11em 0.11em 0 rgb(161, 24, 127);
+  }
+  
+  .menu {
+    display: flex;
+    gap: 10px;
+    align-items: center; /* Center items vertically within the menu */
+  }
+  
+  .menu i {
+    font-size: 1.5rem;
+    margin: 5px;
+  }
+
+  .menu i:hover {
+    color: #64748B;
+  }

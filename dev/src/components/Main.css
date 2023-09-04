@@ -1,0 +1,71 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #0e1538;
+    background-color: transparent;
+}
+
+.box {
+    position: relative;
+    width: 900px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: border-color 0.3s ease, background 0.3s ease; /* Add transitions */
+    border: 0.2px solid #8a8a8a;
+}
+
+.box:hover {
+    border-color: #8a8a8a; /* Change border color on hover */
+    background: #121b3d; /* Change background on hover */
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    width: calc(100% + 8px); /* Adjust width for the whole border */
+    height: calc(100% + 8px); /* Adjust height for the whole border */
+    background: linear-gradient(#00ccff, #d400d4);
+    animation: animate 4s linear infinite;
+    display: none; /* Hide by default */
+    transition: opacity 0.3s ease; /* Add transition for smooth fade-in */
+    top: -4px; /* Position it to cover the top border */
+    left: -4px; /* Position it to cover the left border */
+    border-radius: 20px; /* Match the border-radius of the .box element */
+    z-index: -1; /* Place it behind the content */
+}
+
+.box:hover::before {
+    display: block; /* Show only on hover */
+    opacity: 1; /* Fade-in effect */
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg); /* Adjust rotation for a full circle */
+    }
+}
+
+
+.box h1.number {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px; /* Add margin for spacing */
+    color: #fff;
+    font-size: 1.5em;
+    z-index: 2; /* Place it above the ::before pseudo-element */
+}
+
+.section_name {
+    text-align: center;
+}
+
