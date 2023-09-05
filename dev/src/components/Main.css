@@ -48,9 +48,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 10px auto;
+    margin: 30px auto 10px auto;
     overflow: hidden;
-    margin-top: 15px;
     transition: background-color 0.3s ease;
   }
 
