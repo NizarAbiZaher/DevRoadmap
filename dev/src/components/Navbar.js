@@ -5,8 +5,10 @@ const Navbar = () => {
   return (
     <nav className='navbar'>
       <div className='logo'>
+        <i className="fa-solid fa-sailboat"></i>
+        <span className='spacing'></span>
         Developer Roadmap
-      </div>
+      </div>    
       <div className='menu'>
         <a href='https://www.youtube.com/@NizzyABI'><i className="fab fa-youtube"></i></a>
         <a href='https://twitter.com/NizzyABI'><i className="fa-brands fa-x-twitter"></i></a>

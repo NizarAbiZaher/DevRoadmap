@@ -1,91 +1,107 @@
 .main {
-    display: flex;
-    flex-direction: column; /* Display the cards as a column */
-    align-items: center; /* Center the cards horizontally */
-    justify-content: center;
-    margin-top: 30px;
-    
-  }
-  
-  .card {
-    border: 1px solid #e2e2e2;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 700px;
-    height: 250px;
-    text-align: center;
-    position: relative;
-  }
-  
-  .number {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    border-radius: 50%;
-    color: #fff;
-    font-size: 40px;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-  }
-  
-  .title {
-    margin: 0;
-    color: white;
-    top: 10px;
-  }
-  
-  .image-link {
-    text-decoration: none;
-  }
-  
-  .image-placeholder {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 30px auto 10px auto;
-    overflow: hidden;
-    transition: background-color 0.3s ease;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
 
-  .image-link:hover .image-placeholder {
-    background-color: rgba(200, 200, 200, 0.4); /* Transparent gray background on hover */
-  }
+.card {
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px; /* Reduce padding for a more compact look */
+  width: 100%; /* Full width for smaller screens */
+  max-width: 700px; /* Limit maximum width */
+  height: auto; /* Adjust height to accommodate content */
+  text-align: center;
+  position: relative;
+}
 
-  .image-link:hover .image-placeholder img {
-    opacity: 0.8; /* Reduce opacity of image on hover */
-  }
+.number {
+  position: absolute;
+  top: 10px; /* Adjust top position for better alignment */
+  left: 10px; /* Adjust left position for better alignment */
+  border-radius: 50%;
+  color: #fff;
+  font-size: 30px; /* Reduce font size */
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+}
+
+.title {
+  margin: 0;
+  color: white;
+  top: 5px; /* Adjust top position for better alignment */
+}
+
+.image-link {
+  text-decoration: none;
+}
+
+.image-placeholder {
+  width: 80px; /* Reduce width for a smaller placeholder */
+  height: 80px; /* Reduce height for a smaller placeholder */
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto 10px auto; /* Adjust margins for better spacing */
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.image-link:hover .image-placeholder {
+  background-color: gray; /* Change color on hover */
+}
+
+.image-link:hover .image-placeholder img {
+  opacity: 0.8;
+}
+
+.image-placeholder img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: opacity 0.3s ease;
+}
+
+.buttons {
+  margin-top: 10px; /* Adjust margin for better spacing */
+}
+
+.button {
+  display: inline-block;
+  background-color: #007bff;
+  color: transparent;
+  padding: 6px 12px; /* Adjust padding for a more compact button */
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
 
 
-  .image-placeholder img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    transition: opacity 0.3s ease; /* Add transition for opacity change */
+  @media (max-width: 768px) {
+    .card {
+      width: 100%; /* Full width for smaller screens */
+      max-width: 400px; /* Limit maximum width */
+      height: auto; /* Adjust height to accommodate content */
+    }
+  
+    .number {
+      font-size: 30px;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      display: none;
+    }
   }
   
-  .buttons {
-    margin-top: 15px;
-  }
   
-  .button {
-    display: inline-block;
-    background-color: #007bff;
-    color: transparent;
-    padding: 8px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
-  
-  .button:hover {
-    background-color: #0056b3;
-  }
-  
-
