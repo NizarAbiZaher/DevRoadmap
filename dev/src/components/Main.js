@@ -10,7 +10,7 @@ const Main = ({ number, title, description, link, imageSrc }) => {
         <div className='buttons'>
           <a href={link} className='image-link'>
             <div className='image-placeholder'>
-              <img src={imageSrc} alt={`Course ${number}`} />
+            <img src={imageSrc} alt={`Course ${number}`} />
             </div>
           </a>
         </div>
