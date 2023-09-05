@@ -1,71 +1,92 @@
 .main {
     display: flex;
+    flex-direction: column; /* Display the cards as a column */
+    align-items: center; /* Center the cards horizontally */
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #0e1538;
-    background-color: transparent;
-}
-
-.box {
-    position: relative;
-    width: 900px;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    border-radius: 20px;
-    transition: border-color 0.3s ease, background 0.3s ease; /* Add transitions */
-    border: 0.2px solid #8a8a8a;
-}
-
-.box:hover {
-    border-color: #8a8a8a; /* Change border color on hover */
-    background: #121b3d; /* Change background on hover */
-}
-
-.box::before {
-    content: '';
-    position: absolute;
-    width: calc(100% + 8px); /* Adjust width for the whole border */
-    height: calc(100% + 8px); /* Adjust height for the whole border */
-    background: linear-gradient(#00ccff, #d400d4);
-    animation: animate 4s linear infinite;
-    display: none; /* Hide by default */
-    transition: opacity 0.3s ease; /* Add transition for smooth fade-in */
-    top: -4px; /* Position it to cover the top border */
-    left: -4px; /* Position it to cover the left border */
-    border-radius: 20px; /* Match the border-radius of the .box element */
-    z-index: -1; /* Place it behind the content */
-}
-
-.box:hover::before {
-    display: block; /* Show only on hover */
-    opacity: 1; /* Fade-in effect */
-}
-
-@keyframes animate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg); /* Adjust rotation for a full circle */
-    }
-}
-
-
-.box h1.number {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 10px; /* Add margin for spacing */
-    color: #fff;
-    font-size: 1.5em;
-    z-index: 2; /* Place it above the ::before pseudo-element */
-}
-
-.section_name {
+    margin-top: 30px;
+    
+  }
+  
+  .card {
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 700px;
+    height: 250px;
     text-align: center;
-}
+    position: relative;
+  }
+  
+  .number {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 40px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+  
+  .title {
+    margin: 0;
+    color: white;
+    top: 10px;
+  }
+  
+  .image-link {
+    text-decoration: none;
+  }
+  
+  .image-placeholder {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px auto;
+    overflow: hidden;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+  }
+
+  .image-link:hover .image-placeholder {
+    background-color: rgba(200, 200, 200, 0.4); /* Transparent gray background on hover */
+  }
+
+  .image-link:hover .image-placeholder img {
+    opacity: 0.8; /* Reduce opacity of image on hover */
+  }
+
+
+  .image-placeholder img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: opacity 0.3s ease; /* Add transition for opacity change */
+  }
+  
+  .buttons {
+    margin-top: 15px;
+  }
+  
+  .button {
+    display: inline-block;
+    background-color: #007bff;
+    color: transparent;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
 
