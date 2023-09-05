@@ -4,7 +4,8 @@ import Main from './components/Main';
 import Navbar from './components/Navbar';
 import harvard from './images/harvard.jpg';
 import js from './images/js.png';
-import htmlcss from './images/free.jpg';
+import free from './images/free.jpg';
+import rea from './images/react.png';
 
 
 
@@ -17,7 +18,7 @@ function App() {
     {
         number: '01',
         title: 'Introduction to Programming',
-        description: 'This introductory course by Harvard will teach you the bascis and provide you with a starting point for the rest of your coding journey!',
+        description: 'This introductory course by Harvard will teach you the basics and provide you with a starting point for the rest of your coding journey!',
         link: 'https://www.edx.org/plp/introduction-computer-science-harvardx-cs50x?utm_source=google&utm_campaign=19315581336&utm_medium=cpc&utm_term=cs50&hsa_acc=7245054034&hsa_cam=19315581336&hsa_grp=144242542723&hsa_ad=671177474143&hsa_src=g&hsa_tgt=kwd-296840910&hsa_kw=cs50&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQjwusunBhCYARIsAFBsUP8cwaHfo0DWEIii5xgqqbSZN-2jPNUtmA_Qemwc7QVrUCs86r-bSM4aAqFHEALw_wcB',
         imageSrc: harvard
       },
@@ -26,21 +27,21 @@ function App() {
         title: 'Web Development Basics',
         description: "The FreeCodeCamp's Responsive Web Design course offers a comprehensive journey to master HTML and CSS, which are the main design languages of the web.",
         link: 'https://www.freecodecamp.org/learn/2022/responsive-web-design/',
-        imageSrc: htmlcss
+        imageSrc: free
       },
       {
         number: '03',
-        title: 'Your First Programming Language',
-        description: ' introductory course by Harvard will teach you the bascis and provide you with a starting point for the rest of your coding journey!',
+        title: 'First Programming Language',
+        description: 'JavaScript is the language of the web. By learning it, you will make your static sites that were made using HTML & CSS into fully responsive sites!',
         link: 'https://www.edx.org/plp/introduction-computer-science-harvardx-cs50x?utm_source=google&utm_campaign=19315581336&utm_medium=cpc&utm_term=cs50&hsa_acc=7245054034&hsa_cam=19315581336&hsa_grp=144242542723&hsa_ad=671177474143&hsa_src=g&hsa_tgt=kwd-296840910&hsa_kw=cs50&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQjwusunBhCYARIsAFBsUP8cwaHfo0DWEIii5xgqqbSZN-2jPNUtmA_Qemwc7QVrUCs86r-bSM4aAqFHEALw_wcB',
         imageSrc: js
       },
       {
-        number: '03',
-        title: 'Your First Programming Language',
-        description: ' introductory course by Harvard will teach you the bascis and provide you with a starting point for the rest of your coding journey!',
-        link: 'https://www.edx.org/plp/introduction-computer-science-harvardx-cs50x?utm_source=google&utm_campaign=19315581336&utm_medium=cpc&utm_term=cs50&hsa_acc=7245054034&hsa_cam=19315581336&hsa_grp=144242542723&hsa_ad=671177474143&hsa_src=g&hsa_tgt=kwd-296840910&hsa_kw=cs50&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQjwusunBhCYARIsAFBsUP8cwaHfo0DWEIii5xgqqbSZN-2jPNUtmA_Qemwc7QVrUCs86r-bSM4aAqFHEALw_wcB',
-        imageSrc: js
+        number: '04',
+        title: 'Frameworks',
+        description: "Blending HTML and JavaScript seamlessly, React.js stands as the cornerstone of modern web applications. Elevate your coding prowess with React.js, unlocking enhanced JavaScript proficiency and unleashing newfound programming prowess.",
+        link: 'https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/',
+        imageSrc: rea
       }
 ];
 
