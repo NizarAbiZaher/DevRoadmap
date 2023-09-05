@@ -11,8 +11,8 @@
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 15px; /* Reduce padding for a more compact look */
-  width: 100%; /* Full width for smaller screens */
-  max-width: 700px; /* Limit maximum width */
+  width: 700px; /* Full width for smaller screens */
+  max-width: 100%; /* Limit maximum width */
   height: auto; /* Adjust height to accommodate content */
   text-align: center;
   position: relative;
@@ -52,7 +52,9 @@
   overflow: hidden;
   transition: background-color 0.3s ease;
 }
-
+.image-placeholder {
+  margin: 0 5px; /* Add a small margin between images */
+}
 .image-link:hover .image-placeholder {
   background-color: gray; /* Change color on hover */
 }
@@ -68,9 +70,10 @@
   border-radius: 50%;
   transition: opacity 0.3s ease;
 }
-
 .buttons {
-  margin-top: 10px; /* Adjust margin for better spacing */
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+  margin-top: 15px;
 }
 
 .button {
@@ -90,8 +93,8 @@
 
   @media (max-width: 768px) {
     .card {
-      width: 100%; /* Full width for smaller screens */
-      max-width: 400px; /* Limit maximum width */
+      width: 400px; /* Full width for smaller screens */
+      max-width: 100%x; /* Limit maximum width */
       height: auto; /* Adjust height to accommodate content */
     }
   
