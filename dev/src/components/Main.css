@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 30px;
+  margin-bottom: 30px ;
 }
 
 .card {
@@ -41,8 +42,8 @@
 }
 
 .image-placeholder {
-  width: 80px; /* Reduce width for a smaller placeholder */
-  height: 80px; /* Reduce height for a smaller placeholder */
+  width: 60px; /* Reduce width for a smaller placeholder */
+  height: 60px; /* Reduce height for a smaller placeholder */
   border-radius: 50%;
   background-color: transparent;
   display: flex;

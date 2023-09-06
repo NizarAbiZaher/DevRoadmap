@@ -4,3 +4,9 @@
   font-family: 'Poppins', sans-serif;
   color: white;
 }
+.text {
+  padding-left: 190px;
+  padding-right: 190px;
+  padding-top: 30px;
+  font-size: 20px;
+}
