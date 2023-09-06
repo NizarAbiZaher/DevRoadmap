@@ -17,6 +17,23 @@
   height: auto; /* Adjust height to accommodate content */
   text-align: center;
   position: relative;
+  animation: shineBorder 2s linear infinite alternate;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);; 
+}
+
+@keyframes shineBorder {
+  /* Define animation keyframes */
+  0% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Dark shadow at 0% keyframe */
+  }
+  100% {
+    box-shadow: 0 0 10px cyan; /* Bright lights at 100% keyframe */
+  }
+}
+
+.card:hover {
+  box-shadow: 0 0 10px cyan; /* Bright lights on hover */
+  animation-play-state: paused; /* Pause the animation on hover */
 }
 
 .number {
@@ -51,7 +68,7 @@
   justify-content: center;
   margin: 20px auto 10px auto; /* Adjust margins for better spacing */
   overflow: hidden;
-  transition: background-color 0.3s ease;
+  transition: transform 0.3s ease;
 }
 .image-placeholder {
   margin: 0 5px; /* Add a small margin between images */
@@ -61,7 +78,11 @@
 }
 
 .image-link:hover .image-placeholder img {
-  opacity: 0.8;
+  color: gray;
+}
+
+.image-placeholder:hover {
+  transform: scale(1.1);
 }
 
 .image-placeholder img {
@@ -69,7 +90,10 @@
   max-height: 100%;
   object-fit: cover;
   border-radius: 50%;
-  transition: opacity 0.3s ease;
+}
+
+.image-placeholder img:hover {
+  color: black;
 }
 .buttons {
   display: flex;
