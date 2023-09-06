@@ -122,6 +122,12 @@
       max-width: 100%x; /* Limit maximum width */
       height: auto; /* Adjust height to accommodate content */
     }
+
+    .p {
+      font-size: 16px; /* Adjust font size for smaller screens */
+      text-align: center; /* Center-align text on small screens */
+      margin: 10px; /* Add margin for spacing */
+    }
   
     .number {
       font-size: 30px;

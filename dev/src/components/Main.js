@@ -6,7 +6,7 @@ const Main = ({ number, title, description, content }) => {
       <div className='card'>
         <div className='number'> {number} </div>
         <h2 className='title'>{title}</h2>
-        <p>{description}</p>
+        <p className='p'>{description}</p>
         <div className='buttons'>
           {content.map(({ link, imageSrc }, index) => (
             <a key={index} href={link} className='image-link'>

@@ -1,39 +1,48 @@
+/* Common styles for both desktop and mobile */
 .navbar {
-    display: flex;
-    margin-top: 20px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    border-bottom: 1px solid white
-  }
-  .logo {
-    font-size: 2rem;
-    text-shadow: 0.03em 0.03em 0 rgb(0, 255, 213),
-    0.06em 0.06em 0 rgb(154, 192, 18),
-    0.09em 0.09em 0 rgb(226, 143, 87),
-    0.11em 0.11em 0 rgb(161, 24, 127);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid white;
+}
+
+.logo {
+  font-size: 2rem;
+  text-shadow: 0.03em 0.03em 0 rgb(0, 255, 213),
+  0.06em 0.06em 0 rgb(154, 192, 18),
+  0.09em 0.09em 0 rgb(226, 143, 87),
+  0.11em 0.11em 0 rgb(161, 24, 127);
+}
+
+.menu {
+  display: none; /* Hide the menu items by default on small screens */
+}
+
+.menu i {
+  font-size: 1.5rem;
+  margin: 5px;
+}
+
+.menu i:hover {
+  color: #64748B;
+}
+
+.spacing {
+  display: inline-block;
+  width: 20px; /* Adjust the width to control the spacing */
+}
+
+/* Media query for screens with a maximum width of 768px (typical for phones) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack elements vertically on small screens */
+    text-align: center; /* Center-align text */
+    padding: 10px; /* Reduce padding for a more compact layout */
   }
 
- .fa-solid fa-sailboat:hover{
-    color: cyan;
-  }
-  
   .menu {
-    display: flex;
-    gap: 10px;
-    align-items: center; /* Center items vertically within the menu */
+    display: flex; /* Display the menu items */
+    margin-top: 10px; /* Add some top margin for spacing */
   }
-  
-  .menu i {
-    font-size: 1.5rem;
-    margin: 5px;
-  }
-
-  .menu i:hover {
-    color: #64748B;
-  }
-
-  .spacing {
-    display: inline-block;
-    width: 20px; /* Adjust the width to control the spacing */
-  }
+}
