@@ -21,19 +21,12 @@
   box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);; 
 }
 
-@keyframes shineBorder {
-  /* Define animation keyframes */
-  0% {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Dark shadow at 0% keyframe */
-  }
-  100% {
-    box-shadow: 0 0 10px cyan; /* Bright lights at 100% keyframe */
-  }
-}
-
 .card:hover {
+  /* Add a transition for smoother border change */
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
   box-shadow: 0 0 10px cyan; /* Bright lights on hover */
-  animation-play-state: paused; /* Pause the animation on hover */
+  border-color: cyan; /* Change border color on hover */
+  animation: ring 1s linear forwards; /* Apply the ring effect on hover */
 }
 
 .number {

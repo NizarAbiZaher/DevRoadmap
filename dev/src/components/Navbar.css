@@ -16,12 +16,13 @@
 }
 
 .menu {
-  display: none; /* Hide the menu items by default on small screens */
+  display: flex; /* Display the menu items */
 }
 
 .menu i {
   font-size: 1.5rem;
   margin: 5px;
+  margin-left: 20px;
 }
 
 .menu i:hover {
@@ -33,6 +34,7 @@
   width: 20px; /* Adjust the width to control the spacing */
 }
 
+
 /* Media query for screens with a maximum width of 768px (typical for phones) */
 @media (max-width: 768px) {
   .navbar {
@@ -42,7 +44,6 @@
   }
 
   .menu {
-    display: flex; /* Display the menu items */
-    margin-top: 10px; /* Add some top margin for spacing */
+    display: none; /* Hide the menu items on small screens */
   }
 }

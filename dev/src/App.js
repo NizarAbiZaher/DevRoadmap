@@ -27,7 +27,8 @@ function App() {
             link: 'https://www.edx.org/plp/introduction-computer-science-harvardx-cs50x?utm_source=google&utm_campaign=19315581336&utm_medium=cpc&utm_term=cs50&hsa_acc=7245054034&hsa_cam=19315581336&hsa_grp=144242542723&hsa_ad=671177474143&hsa_src=g&hsa_tgt=kwd-296840910&hsa_kw=cs50&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQjwusunBhCYARIsAFBsUP8cwaHfo0DWEIii5xgqqbSZN-2jPNUtmA_Qemwc7QVrUCs86r-bSM4aAqFHEALw_wcB',
             imageSrc: harvard
           }
-        ]
+        ],
+        approxDuration: <p>Approx. Duration: 1 Month</p>,
       },
       {
         number: '02',
@@ -42,7 +43,8 @@ function App() {
             link: 'https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/',
             imageSrc: js
           }
-        ]
+        ],
+        approxDuration: <p>Approx. Duration: 2-3 Months</p>,
       },
       {
         number: '03',
@@ -53,7 +55,8 @@ function App() {
             link: 'https://fullstackopen.com/en/',
             imageSrc: rea
           }
-        ]
+        ],
+        approxDuration: <p>Approx. Duration: 2 Months</p>,
       },
       {
         number: '04',
@@ -68,7 +71,8 @@ function App() {
             link: 'https://youtu.be/WXsD0ZgxjRw?si=0Nlg3DYqjFxEbyHx',
             imageSrc: api
           }
-        ]
+        ],
+        approxDuration: <p>Approx. Duration: 1 Month</p>,
       },
       {
         number: '05',
@@ -87,7 +91,8 @@ function App() {
             link: 'https://www.youtube.com/watch?v=8hly31xKli0',
             imageSrc: data
           }
-        ]
+        ],
+        approxDuration: <p>Approx. Duration: 1-2 Weeks</p>,
       }
     ];
     

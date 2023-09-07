@@ -1,6 +1,6 @@
 import React from 'react'
 import './Main.css'
-const Main = ({ number, title, description, content }) => {
+const Main = ({ number, title, description, content, approxDuration }) => {
   return (
     <div className='main'>
       <div className='card'>
@@ -16,6 +16,7 @@ const Main = ({ number, title, description, content }) => {
             </a>
           ))}
         </div>
+        <p className='p'>{approxDuration}</p>
       </div>
     </div>
   );
