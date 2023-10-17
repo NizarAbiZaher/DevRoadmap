@@ -102,7 +102,6 @@ setCourseData(updatedCourseData)
   return (
     <div className="App">
       <Navbar />
-      <p className='text'>Happy Coding!</p>
       <div className="main">
         {courseData.map((course) => (
           <Main key={course.number} {...course} />
