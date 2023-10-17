@@ -5,12 +5,13 @@
   justify-content: center;
   margin-top: 30px;
   margin-bottom: 30px ;
+  background-color: #1d1e22;
 }
 
 .card {
   border: 1px solid #e2e2e2;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 4px 4px #feda6a;
   padding: 15px; /* Reduce padding for a more compact look */
   width: 700px; /* Full width for smaller screens */
   max-width: 100%; /* Limit maximum width */
@@ -18,14 +19,14 @@
   text-align: center;
   position: relative;
   animation: shineBorder 2s linear infinite alternate;
-  box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);; 
+   
 }
 
 .card:hover {
   /* Add a transition for smoother border change */
   transition: box-shadow 0.3s ease, border-color 0.3s ease;
-  box-shadow: 0 0 10px cyan; /* Bright lights on hover */
-  border-color: cyan; /* Change border color on hover */
+  box-shadow: 1px 1px 1px 1px #feda6a; /* Bright lights on hover */
+  border-color: #feda6a;; /* Change border color on hover */
   animation: ring 1s linear forwards; /* Apply the ring effect on hover */
 }
 
@@ -70,12 +71,10 @@
   background-color: gray; /* Change color on hover */
 }
 
-.image-link:hover .image-placeholder img {
-  color: gray;
-}
 
 .image-placeholder:hover {
-  transform: scale(1.1);
+  color: gray;
+  transform: scale(1.05);
 }
 
 .image-placeholder img {

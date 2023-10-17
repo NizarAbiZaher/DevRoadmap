@@ -102,7 +102,7 @@ setCourseData(updatedCourseData)
   return (
     <div className="App">
       <Navbar />
-      <p className='text'>Welcome to the Developer Roadmap! This journey is a completely free way to learn how to code and become a Fullstack developer. This journey should take you anywhere from 5-8 Months. Happy Coding! </p>
+      <p className='text'>Happy Coding!</p>
       <div className="main">
         {courseData.map((course) => (
           <Main key={course.number} {...course} />
